@@ -1,0 +1,28 @@
+body {
+  font-size:4rem;
+}
+
+/* tag 가 a 인 엘리먼트 선택 */
+a {
+
+}
+
+/* class 가 a 인 엘리먼트 선택 */
+.a {
+  color:red;
+}
+
+/* id가 a 인 엘리먼트 선택 */
+#a {
+  color:blue;
+}
+
+/* class a와 b를 동시에 가지고 있는 엘리먼트 선택 */
+.a.b {
+  color:gold;
+}
+
+/* 태그가 section이고 class a와 b를 동시에 가지고 있는 엘리먼트 선택 */
+section.a.b {
+  color:green;
+}
