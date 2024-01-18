@@ -1,0 +1,17 @@
+div, section, article {
+  height: 100px;
+  background-color: red;
+}
+
+section {
+  background-color: yellow;
+}
+
+article {
+  background-color: green;
+}
+
+section, article {
+  width: 100px;
+  display: inline-block;
+}
