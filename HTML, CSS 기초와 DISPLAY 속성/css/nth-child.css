@@ -1,0 +1,35 @@
+section > div {
+  width: 15%;
+  height: 100px;
+  background-color: red;
+  display: inline-block;
+}
+
+/* div의 2번째 요소 */
+div:nth-child(2) {
+  background-color: gold;
+}
+
+/* div의 첫번째 요소 */
+div:nth-child(1) {
+  background-color: blue;
+}
+/* first-child로 축약해서 쓸 수 있다. */
+div:first-child {
+  background-color: pink;
+}
+
+/* div의 뒤에서부터 n번째 요소 */
+div:nth-last-child(3) {
+  background-color: aqua;
+}
+
+/* div의 마지막 요소 */
+div:nth-last-child(1){
+  background-color: violet;
+}
+
+/* last-child로 축약해서 사용할 수 있다. */
+div:last-child{
+  background-color: black;
+}
