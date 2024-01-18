@@ -1,0 +1,17 @@
+section > div {
+  display: inline-block;
+  padding: 20px;
+}
+
+section > div > img {
+  width: 300px;
+}
+
+article {
+  display: inline-block;
+}
+
+article > img {
+  width: 300px;
+  margin: 20px;
+}
