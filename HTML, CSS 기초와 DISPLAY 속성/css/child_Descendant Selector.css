@@ -1,0 +1,11 @@
+/* section의 후손 태그에 글자 red 적용 */
+/* 즉 section 안에 있는 a 태그에 적용 */
+section a {
+  color: red;
+}
+
+/* section의 자식 태그에 글자 크기 5rem 적용 */
+/* 이 방식으로 쓰는 것을 추천 */
+section > a {
+  font-size: 5rem;
+}
