@@ -1,0 +1,17 @@
+div {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  text-align: center;
+  font-weight: bold;
+}
+
+nav {
+  width: 30px;
+  display: inline-block;
+}
