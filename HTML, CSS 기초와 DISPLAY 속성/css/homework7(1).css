@@ -1,0 +1,21 @@
+img {
+  width: 300px;
+}
+
+section {
+  height: 50px;
+}
+
+nav {
+  height: 50px;
+}
+
+div > nav {
+  display: inline-block;
+  width: 25px;
+}
+
+article > nav {
+  display: inline-block;
+  width: 330px;
+}
