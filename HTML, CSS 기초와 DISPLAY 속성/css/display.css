@@ -1,0 +1,11 @@
+subject {
+  color : green;
+  background-color: yellow;
+  display: block; /* 화면의 줄어들과 늘어남의 상관 없이 한 줄 다 차지 */
+}
+
+content {
+  color: yellow;
+  background-color: green;
+  display: block;
+}
