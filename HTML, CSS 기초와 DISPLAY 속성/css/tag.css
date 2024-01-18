@@ -1,0 +1,19 @@
+div {
+  font-size: 50px;  
+  font-weight: bold; /* 글자 두께 */
+  color: rgb(255,0,0); /* 글자 색 */
+}
+article {
+  font-size: 60px;
+  color: rgba(255,0,0,.5);  /* rgba에서 a는 불투명도를 표시 0은 투명, 1은 불투명  */
+}
+
+section {
+  font-size: 5rem;
+  color: #ff00ff;
+}
+
+nav {
+  font-size: 10rem; /* 글자 크기 */
+  letter-spacing: -10px; /* 자간 */
+}
