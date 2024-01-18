@@ -1,0 +1,13 @@
+div > a {
+  font-size: 3rem;
+}
+
+nav > a {
+  color: red;
+  font-size: 5rem;
+}
+
+section > a {
+  color: blue;
+  font-size: 7rem;
+}
