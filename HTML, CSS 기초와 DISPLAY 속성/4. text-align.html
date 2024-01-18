@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/text-align.css">
+  <title>text-align</title>
+</head>
+<body>
+  <!-- text-align은 텍스트를 정렬하는 것, 즉 요소가 가지고 있는 텍스트가 정렬이 되는것 -->
+  <div>
+    안녕하세요.
+  </div>
+  
+  <section>
+    잘가세요.
+  </section>
+  
+  <nav>
+    또 봐요
+  </nav>
+
+  <!-- a태그는 인라인 요소로, 너비가 최소한으로 좁아지기 때문에 text-align의 영향을 받지 않음, 그리고 글자취급함 -->
+  <!-- 그러므로 부모요소를 블록 영역으로 잡고, 부모인 article에 text-align을 적용한다.  -->
+  <article>
+    <a href="">
+      HELLO
+    </a>
+  </article>
+
+  <!-- 블록요소는 부모의 text-align에 영향을 받지 않는다 -->
+  <!-- 만약에 영향을 받기 위해서는 inline-block으로 변경한다. -->
+  <article>
+    <div>
+      안녕하세요.
+    </div>  
+  </article>
+</body>
+</html>

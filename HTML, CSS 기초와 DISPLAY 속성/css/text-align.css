@@ -1,0 +1,34 @@
+/* 몰라도 됩니다. */
+div, section, nav {
+  border:3px dotted red;
+  margin:10px;
+  padding:10px;
+}
+/* 몰라도 됩니다. */
+
+div {
+  /* 절대로 자신을 정렬하는게 아니라. */
+  text-align:left;
+}
+
+section {
+  /* 자신이 가지고 있는 텍!스!트!를 정렬한다. */
+  text-align:center;
+}
+
+nav {
+  /* 글자가 아닌 엘리먼트도 정렬할 수 있을까? */
+  /* 힌트 : display:inline-block 하면 엘리먼트가 `텍스트 화` 된다. */
+  text-align:right;
+}
+
+article {
+  text-align: center;
+}
+
+
+/* <!-- 블록요소는 부모의 text-align에 영향을 받지 않는다 --> */
+/* <!-- 만약에 영향을 받기 위해서는 inline-block으로 변경한다. --> */
+article > div {
+  display: inline-block;
+}
