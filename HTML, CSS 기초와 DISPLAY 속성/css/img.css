@@ -1,0 +1,6 @@
+/* width와 height 동시에 바꾸면 비율이 깨지기 때문에 object-fit으로 비율 맞춰준다 */
+img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+}
