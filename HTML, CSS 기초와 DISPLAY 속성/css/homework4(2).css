@@ -1,0 +1,20 @@
+div {
+  text-align: right;
+}
+div > a {
+  font-size: 3rem;
+}
+nav {
+  text-align: center;
+}
+nav > a {
+  font-size: 5rem;
+  color: red;
+}
+section {
+  text-align: left;
+}
+section > a {
+  font-size: 7rem;
+  color: blue;
+}
