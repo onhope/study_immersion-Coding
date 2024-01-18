@@ -1,0 +1,22 @@
+div {
+  vertical-align: top;
+  display: inline-block;
+  border: 1px solid red;
+  width: 100px;
+  /* padding은 박스의 안쪽 여백을 다룬다 */
+  /* padding의 상하좌우 값을 각각 부여 */
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 70px;
+  /* padding 상하좌우 일괄 값 부여 */
+  padding: 100px;
+}
+
+/* 인라인요소에도 padding을 적용하기 위해서는  */
+/* display 속성을 inline-block이나 block로 변경한다 */
+a {
+  border: 1px solid blue;
+  padding: 100px;
+  display: inline-block;
+}
