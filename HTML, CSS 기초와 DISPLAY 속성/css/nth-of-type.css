@@ -1,0 +1,22 @@
+section > nav {
+  width: 15%;
+  height: 100px;
+  background-color: yellow;
+  display: inline-block;
+}
+section > div {
+  width: 15%;
+  height: 100px;
+  background-color: red;
+  display: inline-block;
+}
+
+/* div요소 이면서 1번째 요소 */
+div:nth-of-type(1) {
+  background-color: pink;
+}
+
+/* div이면서 뒤에서 3번째 요소 찾기 */
+div:nth-last-of-type(3) {
+  background-color: teal;
+}
