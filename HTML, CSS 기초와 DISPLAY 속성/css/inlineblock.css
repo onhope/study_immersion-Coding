@@ -1,0 +1,22 @@
+/* display: inline block 속성 */
+/* width */
+/* 지정 x => 최소한으로 줄어난다. 즉, 한줄에 최대한 여러개 */
+/* 지정 o => 지정한 만큼의 영역을 차지한다. */
+/* height */
+/* 지정 x => 최소한으로 줄어든다. */
+/* 지정 o => 지정한 만큼의 영역을 차지한다. */
+
+
+div, section {
+  display: inline-block;
+  font-size: 7rem;
+  border: 10px solid red;
+  background-color: yellow;
+}
+
+section {
+
+  background-color: green;
+  width: 300px;
+  height: 600px;
+}
