@@ -1,0 +1,25 @@
+section {
+  border: 1px solid black;
+}
+div {
+  vertical-align: top;
+  display: inline-block;
+  border: 1px solid red;
+  width: 100px;
+  /* margin은 박스의 바깥쪽 여백을 다룬다 */
+  /* margin의 상하좌우 값을 각각 부여 */
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: 30px;
+  margin-bottom: 70px;
+  /* margin 상하좌우 일괄 값 부여 */
+  margin: 100px;
+}
+
+/* 인라인요소에도 margin을 적용하기 위해서는  */
+/* display 속성을 inline-block이나 block로 변경한다 */
+a {
+  border: 1px solid blue;
+  margin: 100px;
+  display: inline-block;
+}
