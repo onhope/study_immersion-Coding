@@ -1,0 +1,12 @@
+a {
+  font-size: 3rem;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+div {
+  text-align: center;
+  font-weight: bold;
+}
