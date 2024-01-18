@@ -1,0 +1,23 @@
+/* display: block 속성 */
+/* width */
+/* 지정 x => 최대한으로 늘어난다. 즉, 한줄을 차지 */
+/* 지정 o => 지정한 만큼의 영역을 차지한다. */
+/* height */
+/* 지정 x => 최소한으로 줄어든다. */
+/* 지정 o => 지정한 만큼의 영역을 차지한다. */
+
+
+div, section {
+  font-size: 7rem;
+  border: 10px solid red;
+  background-color: yellow;
+  width: 300px;
+  height: 300px;
+}
+
+section {
+
+  background-color: green;
+  /* width: 300px; */
+  /* height: 600px; */
+}
