@@ -1,0 +1,42 @@
+/* 노말라이즈 */
+.menu-item-text {
+  color:inherit;
+  text-decoration:none;
+}
+
+/* 커스텀 */
+
+/* 메뉴박스 */
+.menu-box {
+  text-align:center;
+}
+
+/* 메뉴 */
+.menu-box > div {
+  /* 메뉴에는 배경색이 있다. */
+  background-color:#dfdfdf;
+  /* 메뉴는 너비가 최대한 줄어든다. */
+  display:inline-block;
+  border-radius:5px;
+  padding:0 10px;
+}
+
+/* 메뉴 아이템 */
+.menu-box > div > div {
+  /* 메뉴 아이템은 너비가 최대한 줄어들고 한줄에 여러개 나온다. */
+  display:inline-block;
+}
+
+/* 메뉴 아이템 텍스트 */
+.menu-box > div > div > div {
+  /* 무조건 a(버튼)에 padding을 넣어야 한다. */
+  padding:10px;
+  /* 이걸 안하면 padding이 안먹는다. */
+  display:block;
+}
+
+/* 마우스가 올려진 메뉴 아이템의 자식인 텍스트 */
+nav > div > div:hover > div {
+  background-color:black;
+  color:white;
+}
