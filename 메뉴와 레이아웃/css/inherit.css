@@ -1,0 +1,18 @@
+section {
+  font-size: 10rem;   /* 상속 o */
+  font-weight: bold; /* 상속 o */
+  color: violet; /* 상속 o */
+  text-align: center; /* 상속 o */
+  border : 5px solid red;
+  background-color: yellow; /* 상속 x, 상속되는 것처럼 보이는 이유는 div 태그가 바탕이 투명이기 때문임 */
+  width: 500px; /* 상속 x, width는 auto 이므로, 블록요소는 한 줄을 다 쓰려고 하는 성질 때문에 늘어나고 줄어드는 것임. 상속 때문이 아님*/
+  height: 500px; /* 상속 x */
+}
+
+section > div {
+  border: 5px solid blue;
+}
+
+section > div > div {
+  border: 5px solid green;
+}
