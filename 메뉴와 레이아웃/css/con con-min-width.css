@@ -1,0 +1,26 @@
+body {
+  margin:0;
+}
+
+:root {
+  --site-width:1200px;
+}
+
+.con {
+  /* 가운데 정렬 */
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.con-min-width {
+  min-width:var(--site-width);
+}
+
+.con {
+  width:var(--site-width);
+}
+
+.top-bar {
+  background-color:black;
+  color:white;
+}
