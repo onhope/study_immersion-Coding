@@ -1,0 +1,19 @@
+.popup {
+  width:200px;
+  height:200px;
+  border:10px solid black;
+}
+
+.popup__head {
+  height:30px;
+  background-color:#afafaf;
+}
+
+.popup__body {
+  height:calc(100% - 30px);  /* 100% - head 에서 잡힌 높이 */
+  background-color:red;
+}
+
+.popup__body--bg-pink {
+  background-color:pink;
+}
