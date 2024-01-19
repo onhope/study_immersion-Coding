@@ -1,0 +1,17 @@
+/* 변수 사용하기 */
+:root {
+  --header-width: 600px;;
+}
+
+.header {
+  width: var(--header-width);
+  height: 100px;
+  background-color: red;
+  margin: 100px;
+}
+
+/* 변수와 calc 계산 같이 사용하기 */
+/* 변수를 변하게 하면 자동으로 변경되서 효율성이 올라가네 */
+.header-2 {
+  width:calc(var(--header-width) + 50px);
+}
