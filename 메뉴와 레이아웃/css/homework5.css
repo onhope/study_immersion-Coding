@@ -1,0 +1,29 @@
+/* 노말라이즈 */
+body {
+  margin: 0;
+}
+
+/* 라이브러리 */
+.con {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 커스텀 */
+:root {
+  --site-width:300px;
+}
+
+.con-min-width {
+  min-width: var(--site-width);
+}
+
+.con {
+  width: var(--site-width);
+}
+
+.top-bar {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+}
