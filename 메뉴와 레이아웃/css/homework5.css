@@ -3,15 +3,27 @@ body {
   margin: 0;
 }
 
-/* 라이브러리 */
+.bg-green {
+  background-color: green;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+/* 라이브러리 - 범용적으로 적용, 사이트가 바뀌어도 변하지 않음 */
 .con {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* 커스텀 */
+/* 커스텀 - 오직 이 페이지에서만 적용 */
 :root {
-  --site-width:300px;
+  --site-width : 300px;
 }
 
 .con-min-width {
@@ -22,8 +34,23 @@ body {
   width: var(--site-width);
 }
 
+/* 탑바 시작 */
+
 .top-bar {
   background-color: black;
   color: white;
   font-size: 2rem;
 }
+
+.top-bar__left-box {
+  display: inline-block;
+  width: 100px;
+}
+
+.top-bar__right-box {
+  display: inline-block;
+  width: calc(100% - 100px);
+}
+/* 탑바 끝 */
+
+/* 커스텀 끝 */
