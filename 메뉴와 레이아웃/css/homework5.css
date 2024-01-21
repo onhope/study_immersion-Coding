@@ -3,6 +3,11 @@ body {
   margin: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .bg-green {
   background-color: green;
 }
@@ -20,10 +25,13 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.block {
+  display: block;
+}
 
 /* 커스텀 - 오직 이 페이지에서만 적용 */
 :root {
-  --site-width : 300px;
+  --site-width : 500px;
 }
 
 .con-min-width {
@@ -44,12 +52,16 @@ body {
 
 .top-bar__left-box {
   display: inline-block;
-  width: 100px;
+  width: 200px;
 }
 
 .top-bar__right-box {
   display: inline-block;
-  width: calc(100% - 100px);
+  width: calc(100% - 200px);
+}
+
+.top-bar__logo {
+  padding: 10px 0;
 }
 /* 탑바 끝 */
 
