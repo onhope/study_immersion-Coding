@@ -1,0 +1,36 @@
+body, ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu-1 {
+  text-align: center;
+}
+
+.menu-1 > ul {
+  background-color: #dfdfdf;
+  display: inline-block; 
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.menu-1 > ul > li {
+  display: inline-block;
+  width: 200px;
+}
+
+.menu-1 > ul > li > a {
+  padding: 10px;
+  display: block;
+}
+
+.menu-1 > ul > li:hover > a {
+  background-color: black;
+  color: white;
+}
