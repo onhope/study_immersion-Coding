@@ -1,0 +1,10 @@
+div {
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:4rem;
+  font-weight:bold;
+  color:black;
+  text-shadow:10px 10px 5px #afafaf, 10px 10px 5px #afafaf;
+}
