@@ -1,0 +1,10 @@
+.box-1 {
+  border:10px solid red;
+  height:500px;
+  /* 인터넷 익스플로어11 에서 object-fit으로 화질비율 맞추는 기능이 적용이 안됨 */
+  /* 이런 경우에는 background 이미지 속성을 사용 */
+  background-image:url(https://picsum.photos/id/237/200/300);
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+}
