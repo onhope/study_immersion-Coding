@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.box-1 {
+  border:10px solid black;
+  margin-top: 100px;
+  height: 100px;
+}
+
+.width-10p {
+  width: 10%;
+}
+
+.box-1 > div {
+  height: 100%;
+  background-color: red;
+}
+
+.box-1 > div:nth-child(2n) {
+  background-color: blue;
+}
+
+.inline-grid {
+  font-size: 0;
+}
+
+.inline-grid > * {
+  display: inline-block;
+  font-size: 1rem;
+  vertical-align: top;
+}
+
+.box-1-2 > div:nth-child(1) {
+  width: 100px;
+}
+
+.box-1-2 > div:nth-child(2),
+.box-1-2 > div:nth-child(3) {
+  width: calc((100% - 100px) / 2);
+}
+
+.box-1-3 > div {
+  width: calc((100% - 20px * (4 - 1)) / 4);
+}
+
+.box-1-3 > div:not(:nth-child(4)) {
+  margin-right: 20px;
+}
