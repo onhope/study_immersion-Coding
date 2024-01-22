@@ -64,7 +64,7 @@ a {
 
 /* 커스텀 시작*/
 :root {
-  --site-width: 800px;
+  --site-width: 1200px;
 }
 
 .con-min-width {
@@ -77,22 +77,26 @@ a {
 /* 커스텀 끝*/
 
 /* 탑바 시작 */
+:root {
+  --top-bar__left-box__logo : 170px; 
+}
+
 .top-bar {
   background-color: black;
   color: white;
 }
 
 .top-bar__left-box {
-  width: 200px;
+  width: var(--top-bar__left-box__logo);
   display: inline-block;
   vertical-align: top;
 }
 
 .top-bar__right-box {
-  width: calc(100% - 200px);
+  width: calc(100% - var(--top-bar__left-box__logo));
   display: inline-block;
   vertical-align: top;
-  text-align: center;
+  text-align: right;
 }
 
 .top-bar__logo {
