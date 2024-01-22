@@ -1,0 +1,7 @@
+/* block인 요소에 flex를 적용하면 한줄로 적용 */
+/* 그러므로 flex를 쓸거면 자식은 1명인게 좋다. article 태그 추가*/
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
