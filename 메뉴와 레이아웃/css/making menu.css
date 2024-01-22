@@ -1,0 +1,42 @@
+/* 노말라이즈 시작 */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* 노말라이즈 끝 */
+
+/* 커스텀 시작 */
+.menu-box-1 {
+  text-align: center;
+}
+
+.menu-box-1 > ul {
+  background-color: #afafaf;
+  display: inline-block;
+  padding: 0 30px;
+  border-radius: 20px;
+}
+
+.menu-box-1 > ul > li {
+  display: inline-block;
+}
+
+.menu-box-1 > ul > li > a {
+  display: block;
+  padding: 20px;  
+}
+
+.menu-box-1 > ul > li:hover {
+  background-color: black;
+  color: white;
+}
+/* 커스텀 끝 */
+
+/* 라이브러리 시작 */
+/* 라이브러리 끝 */
