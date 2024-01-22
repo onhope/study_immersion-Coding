@@ -1,0 +1,28 @@
+body {
+  margin:0;
+}
+
+div {
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color:#996D6D;
+}
+
+div > span {
+  font-weight:bold;
+  font-size:3rem;
+  color:white;
+  /* span은 인라인 요소이기 떄문에 transform 이 적용안됨 */
+  /* 그러므로 display 속성을 inline-block으로 변경 */
+  display:inline-block;
+  transform:translate(-3px, -5px);
+  transition: transform 1s, text-shadow 1s;
+  text-shadow:#474747 30px 50px 20px;
+}
+
+div:hover > span {
+  transform:translate(3px, 5px);
+  text-shadow:#474747 -3px -5px 2px;
+}
