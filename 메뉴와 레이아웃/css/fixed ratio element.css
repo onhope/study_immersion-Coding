@@ -1,0 +1,18 @@
+img {
+  width:100%;
+  display:block;
+}
+
+div {
+  background-color:red;
+}
+
+/* 모든 요소는 비활성화된 숨겨진 자식을 가지고 있음 - <before><after>*/
+/* 활성화 하려면 ::after, ::before 이런식으로 쓰면 된다. */
+/* 이 숨겨진 요소는 기본적으로 인라인 요소이기때문에 block 으로 변경 */
+
+div::after {
+  content: "";
+  display: block;
+  padding-top: 56%;
+}
