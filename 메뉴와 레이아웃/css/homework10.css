@@ -52,6 +52,16 @@ body {
 }
 
 .img-list-box > ul > li {
-  width:20%;
+  width: 20%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* 비율이 1:1이 아닌 500 x 700 이므로 비율을 맞춰주기 */
+.img-list-box > ul > li::after {
+  content:"";
+  display:block;
+  padding-top:100%;
 }
 /* 커스텀 끝 */
