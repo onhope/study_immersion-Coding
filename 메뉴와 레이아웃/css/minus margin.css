@@ -1,0 +1,49 @@
+/* 노말라이즈 */
+body {
+  margin:0;
+}
+
+/* 라이브러리 */
+.con {
+  margin:0 auto;
+}
+
+/* 커스텀 */
+.con {
+  max-width:300px;
+}
+
+.title-bar {
+  font-weight:bold;
+  font-size:2rem;
+  background-color:red;
+  padding:20px 0;
+  margin-top:30px;
+}
+
+.title-bar > span {
+  background-color:blue;
+}
+
+.title-bar:nth-child(1) {
+  margin-top:0px;
+}
+
+.title-bar:nth-child(2) > span {
+  /* span의 좌측 50px 부분이 부분 유령적으로 유령화 된다. */
+  margin-left:-50px;
+}
+
+.title-bar:nth-child(3) > span {
+  /* span의 좌측 100px 부분이 부분 유령적으로 유령화 된다. */
+  margin-left:-100px;
+}
+
+.title-bar:nth-child(4) {
+  text-align:right;
+}
+
+.title-bar:nth-child(4) > span {
+  /* span의 우측 100px 부분이 부분 유령적으로 유령화 된다. */
+  margin-right:-100px;
+}
