@@ -1,0 +1,9 @@
+/* 그림이 아니라 텍스트 이므로 텍스트에 적용되는 효과 전부 적용된다*/
+.fa-solid {
+  font-size: 10rem;
+  color: violet;
+}
+
+.fa-solid:hover {
+  color: blue;
+}
