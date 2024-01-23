@@ -1,0 +1,91 @@
+/* 노말라이즈 시작 */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* 노말라이즈 끝 */
+
+/* 라이브러리 시작 */
+  .con {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .inline-grid {
+    font-size: 0;
+  }
+
+  .inline-grid > * {
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .text-align-center {
+    text-align: center;
+  }
+/* 라이브러리 끝 */
+
+/* 커스텀 시작 */
+:root {
+  --site-width : 1200px;
+}
+
+.con-min-width {
+  min-width: var(--site-width);
+  padding: 0 10px;
+}
+
+.con {
+  width: var(--site-width);
+}
+
+/* 로고 박스 시작 */
+.logo-bar__logo {
+  font-size: 5rem;
+}
+
+.logo-bar__logo > span:last-child {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.logo-bar__logo > span > span:nth-child(2) {
+  color: red;
+}
+/* 로고 박스 끝 */
+
+/* 메뉴 박스 시작 */
+.menu-bar {
+  margin-top: 30px;
+}
+
+.menu-bar__menu-box-1 > ul > li {
+  width: calc(100% / 7);
+}
+
+.menu-bar__menu-box-1 > ul > li > a {
+  text-align: center;
+  padding: 10px 0; 
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.menu-bar__menu-box-1 > ul > li:hover > a {
+  color: red;
+  text-decoration: underline;
+}
+
+/* 메뉴 박스 끝 */
+/* 커스텀 끝 */
