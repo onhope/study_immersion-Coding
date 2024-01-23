@@ -1,0 +1,27 @@
+section {
+  border: 10xp solid blue;
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* float을 사용하면 자식이 부모를 무시하게 됨 */
+section > div {
+  border: 4px solid red;
+  font-size: 2rem;
+  float: left;
+  width: 20%;
+  box-sizing: border-box;
+}
+
+/* float으로 순서를 변경하기 */
+section > div:nth-child(1), 
+section > div:nth-child(3) {
+  float: right;
+}
+
+/* float의 부작용을 해결하는 방법 */
+section::after {
+  content: "";
+  display: block; 
+  clear: both;
+}
