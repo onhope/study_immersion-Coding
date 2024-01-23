@@ -1,0 +1,74 @@
+/* 노말라이즈 시작 */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* 노말라이즈 끝 */
+
+/* 라이브러리 시작 */
+.con {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.block {
+  display: block;
+}
+
+.inline-grid {
+  font-size: 0rem;
+}
+
+.inline-grid > * {
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+/* 라이브러리 끝 */
+
+/* 커스텀 시작 */
+:root {
+  --site-width : 1200px;
+}
+
+.con-min-width {
+  min-width: var(--site-width);
+  padding: 0 10px;
+}
+
+.con {
+  width: var(--site-width);
+}
+
+/* 메뉴 구현 시작 */
+.menu-bar__menu-box-1 > ul > li {
+  /* background-color: red; */
+  width: calc(100% / 7);
+}
+
+.menu-bar__menu-box-1 > ul > li:hover > a {
+  color: red;
+  text-decoration: underline;
+}
+
+.menu-bar__menu-box-1 > ul > li > a {
+  /* background-color: gold; */
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  font: 1.3rem;
+}
+
+/* 메뉴 구현 끝 */
+/* 커스텀 끝 */
