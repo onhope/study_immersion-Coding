@@ -1,0 +1,17 @@
+div {
+  width:200px;
+  height:200px;
+  padding:20px;
+  border:20px solid green;
+  margin:20px;
+  background-color:red;
+  font-weight:bold;
+  color:white;
+  font-size:2rem;
+}
+
+div:last-child {
+  /* 아래 코드는 div의 너비를 200px로 고정시킨다. */
+  /* 아래코드가 작동하면 padding과 border로는 너비가 바뀌지 않는다 */
+  box-sizing:border-box;
+}
