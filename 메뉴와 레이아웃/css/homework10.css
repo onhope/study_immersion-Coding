@@ -52,10 +52,16 @@ body {
 }
 
 .img-list-box > ul > li {
-  width: calc(100% / 3);
+  width: calc((100% - 10px * (5 - 1)) / 5);
+  margin-top: 10px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.img-list-box > ul > li:not(:nth-child(5n)) {
+  /* outline: 10px solid gold; */
+  margin-right: 10px;
 }
 
 .img-list-box > ul > li::after {
@@ -63,4 +69,6 @@ body {
   display: block;
   padding-top: 100%;
 }
+
+
 /* 커스텀 끝 */
