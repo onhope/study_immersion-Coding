@@ -35,7 +35,7 @@ a {
 
 /* 커스텀 시작 */
 :root {
-  --site-width : 700px;
+  --site-width : 1200px;
 }
 
 .con-min-width {
@@ -52,14 +52,14 @@ body {
 }
 
 .img-list-box > ul > li {
-  width: calc((100% - 10px * (5 - 1)) / 5);
+  width: calc((100% - 10px * (3 - 1)) / 3);
   margin-top: 10px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.img-list-box > ul > li:not(:nth-child(5n)) {
+.img-list-box > ul > li:not(:nth-child(3n)) {
   /* outline: 10px solid gold; */
   margin-right: 10px;
 }
