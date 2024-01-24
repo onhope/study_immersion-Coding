@@ -1,0 +1,11 @@
+div {
+  padding:10px;
+  font-size:2rem;
+  width:1000px;
+  margin:0 auto;
+  background-color:red;
+  white-space:nowrap;
+  overflow-x:hidden;
+  /* 넘쳐서 숨겨지는 텍스트 ... 처리 */
+  text-overflow:ellipsis;
+}
