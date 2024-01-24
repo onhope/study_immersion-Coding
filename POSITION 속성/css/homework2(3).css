@@ -1,0 +1,51 @@
+section {
+  position: absolute;
+  border: 10px solid black;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+}
+
+section > nav {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top:0;
+  left:0;
+}
+
+section > nav:last-child {
+  top: 0;
+  right: 0;
+  left: auto;
+}
+
+section > nav > div {
+  position: absolute;
+  border: 5px solid black;
+  width: 40%;
+  height: 40%;
+}
+
+section > nav > div:first-child {
+  background-color: red;
+  top: 10%;
+  left: 10%;
+}
+
+section > nav > div:nth-child(2) {
+  background-color: pink;
+  top: 30%;
+  left: 30%;
+}
+
+section > nav:nth-child(2) > div:nth-child(2) {
+  z-index: 1;
+}
+
+section > nav > div:nth-child(3) {
+  background-color: orange;
+  top: 50%;
+  left: 50%;
+}
