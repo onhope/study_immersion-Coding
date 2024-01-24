@@ -1,0 +1,96 @@
+/* 1. 2차메뉴아이템을 모두 숨겨주세요. */
+/* v1 */
+/* .menu-1 > ul > li > ul > li {
+  display: none;
+} */
+
+/* v2 */
+/* .menu-1 > ul li li {
+  display:none;
+} */
+
+/* v3 */
+/* .menu-1 ul li li {
+  display:none;
+} */
+
+/* v4 */
+/* .menu-1 li li {
+  display:none;
+} */
+
+
+/* 2. 기존 CSS를 전부 지우고, 2차 메뉴를 숨겨주세요. */
+/* v1 */
+/* .menu-1 > ul > li > ul {
+  display: none;
+} */
+
+/* v2 */
+/* .menu-1 > ul li ul {
+  display:none;
+} */
+
+/* v3 */
+/* .menu-1 > ul ul {
+  display:none;
+} */
+
+/* v4 */
+/* .menu-1 ul li ul {
+  display:none;
+} */
+
+/* v5 */
+/* .menu-1 ul > li > ul {
+  display:none;
+} */
+
+/* v6 */
+/* .menu-1 ul ul {
+  display:none;
+} */
+
+/* 3. 기존 CSS를 전부 지우고, 2차 메뉴아이템 텍스트를 숨겨주세요. */
+/* v1 */
+/* .menu-1 > ul > li > ul > li > a {
+  display:none;
+} */
+
+/* v2 */
+/* .menu-1 ul li ul li a {
+  display:none;
+} */
+
+/* 4. 기존 CSS를 전부 지우고, 1차 메뉴아이템 텍스트를 숨겨주세요. */
+/* .menu-1 > ul > li > a {
+  display:none;
+} */
+
+/* 5. 존 CSS를 전부 지우고, 1차 메뉴아이템 텍스트에 마우스를 올렸을 때 인접동생인 ul의 배경색을 red로 변경해주세요. */
+/* .menu-1 > ul > li > a:hover + ul {
+  background-color: red;
+} */
+
+/* 6. 기존 CSS를 전부 지우고, 1차 메뉴아이템에 마우스를 올렸을 때 자식인 ul의 배경색을 red로 변경해주세요. */
+/* .menu-1 > ul > li:hover > ul {
+  background-color: red;
+} */
+
+/* 7. 기존 CSS를 전부 지우고, 2차 메뉴를 숨긴 상태에서 1차 메뉴 아이템에 마우스를 올렸을 때 자식인 메뉴(2차메뉴)를 보여주세요. */
+/* .menu-1 > ul > li > ul {
+  display: none;
+}
+
+.menu-1 > ul > li:hover > ul {
+  display: block;
+} */
+
+/* 8. 기존 CSS를 전부 지우고, 서브메뉴(1차 메뉴를 제외한 모든 메뉴)를 숨긴 상태에서 메뉴 아이템에 마우스를 올렸을 때 자식인 메뉴를 보여주세요. */
+.menu-1 > ul ul {
+  display: none;
+}
+
+.menu-1 > ul > li:hover > ul {
+  display: block;
+}
