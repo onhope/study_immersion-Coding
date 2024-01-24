@@ -1,0 +1,9 @@
+div {
+  padding: 10px;
+  font-size: 2rem;
+  width: 1000px;
+  margin: 0 auto;
+  background-color: red;
+  /* 줄바꿈 금지 */
+  white-space: nowrap;
+}
