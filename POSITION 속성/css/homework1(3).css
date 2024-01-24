@@ -1,0 +1,59 @@
+section > div {
+  position: absolute;
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+}
+
+section > div:nth-of-type(1) {
+  background-color: gold;
+  top: 0;
+  left: 0;
+}
+
+section > div:nth-of-type(2) {
+  background-color: green;
+  top: 0;
+  left: calc(100% / 3);
+}
+
+section > div:nth-of-type(3) {
+  background-color: pink;
+  top: 0;
+  right: 0;
+}
+
+section > div:nth-of-type(4) {
+  background-color: violet;
+  top: calc(100% / 3);
+  left: 0;
+}
+
+section > div:nth-of-type(5) {
+  background-color: red;
+  top: calc(100% / 3);
+  left: calc(100% / 3);
+}
+
+section > div:nth-of-type(6) {
+  background-color: blue;
+  top: calc(100% / 3);
+  right: 0;
+}
+
+section > div:nth-of-type(7) {
+  background-color: gray;
+  top: calc(100% / 3 * 2);
+  left: 0;
+}
+
+section > div:nth-of-type(8) {
+  background-color: blueviolet;
+  top: calc(100% / 3 * 2);
+  left: calc(100% / 3);
+}
+
+section > div:nth-of-type(9) {
+  background-color: chartreuse;
+  top: calc(100% / 3 * 2);
+  right: 0;
+}
