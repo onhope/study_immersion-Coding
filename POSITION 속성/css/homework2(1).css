@@ -1,0 +1,42 @@
+section {
+  position: relative;
+  border: 10px solid red;
+  width: 200px;
+  height: 200px;
+  /* absolute일때는 유령이므로 적용 안되나, relative일때는 사람이므로 적용 */
+  margin-left: auto;
+  margin-right: auto;
+  /* 화면의 정가운데에 오게하기 위해서는 */
+  /* 전체 화면의 높이 100vh / 2 = 50vh에서 section의 높이의 반만큼 빼주면 정중앙에 온다 */
+  margin-top: calc(50vh - 200px / 2);
+}
+
+section > div {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+
+section > div:nth-of-type(1) {
+  background-color: red;
+  top: 0;
+  left: 0;
+}
+
+section > div:nth-of-type(2) {
+  background-color: blue;
+  top: 0;
+  left: 50%;
+}
+
+section > div:nth-of-type(3) {
+  background-color: yellow;
+  top: 50%;
+  left: 0;
+}
+
+section > div:nth-of-type(4) {
+  background-color: green;
+  top: 50%;
+  left: 50%;
+}
