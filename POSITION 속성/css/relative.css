@@ -1,0 +1,42 @@
+/* absolute를 중첩으로 2개를 사용하게 되면은  활동 영역이 전국구에서 지역구로 변경된다.  */
+/* 자식 유령이 부모 유령의 세상에 갖히게 된다. */
+/* 이를 해결하기 위해서 전구구로 변경하되, 사람인 relative를 쓴다. */
+/* relative를 쓰면 lorem한테 무시 안당하고 영역을 차지 (사람) */
+/* 동시에 안에 있는 자식 유령들을 가둘 수 있는 상태 */
+section {
+  /* position: absolute; */
+  position: relative;
+  border: 5px solid black;
+  width: 200px;
+  height: 200px;
+}
+
+section > div {
+  position: absolute;
+  width: 50%;
+  height: 25%;
+}
+
+section > div:nth-of-type(1) {
+  background-color: red;
+  top: 10%;
+  left: 10%;
+}
+
+section > div:nth-of-type(2) {
+  background-color: blue;
+  top: 20%;
+  left: 20%;
+}
+
+section > div:nth-of-type(3) {
+  background-color: green;
+  top: 30%;
+  left: 30%;
+}
+
+section > div:nth-of-type(4) {
+  background-color: gold;
+  top: 40%;
+  left: 40%;
+}
