@@ -44,10 +44,6 @@ a {
   margin-right: auto;
 }
 
-.block {
-  display: block;
-}
-
 .bg-red {
   background-color: red;
 }
@@ -55,25 +51,24 @@ a {
 .bg-blue {
   background-color: blue;
 }
-
 /* 라이브러리 끝 */
 
 /* 커스텀 시작 */
 :root {
-  --site-width: 1200px;
-  ---body__background_image : linear-gradient(to right top, #f5f7fa, #c3cfe2);
+  --site-width:1200px;
+  --body__background-image: linear-gradient(to right top, #f5f7fa, #c3cfe2);
 }
 
 .con-min-width {
-  min-width: var(--site-width);
-  padding: 0 10px;
+  min-width:var(--site-width);
+  padding:0 10px;
 }
 
 .con {
-  width: var(--site-width);
+  width:var(--site-width);
 }
 
-/* 탑바 시작 */
+/* top-bar 시작 */
 .top-bar > .con {
   text-align: center;
 }
@@ -88,16 +83,11 @@ a {
 .top-bar__menu-box-1,
 .top-bar__menu-box-1 > ul > li > ul {
   background-color: #afafaf;
-}
+} 
 
 .top-bar__menu-box-1 > ul > li {
   display: inline-block;
   position: relative;
-}
-
-.top-bar__menu-box-1 > ul > li:hover > a {
-  background-color: black;
-  color: white;
 }
 
 .top-bar__menu-box-1 ul > li > a {
@@ -107,8 +97,13 @@ a {
 }
 
 .top-bar__menu-box-1 > ul > li > a {
-  padding-left:50px;
-  padding-right:50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.top-bar__menu-box-1 ul > li:hover > a {
+  background-color: black;
+  color: white;
 }
 
 .top-bar__menu-box-1 > ul > li > ul {
@@ -122,5 +117,7 @@ a {
 .top-bar__menu-box-1 > ul > li:hover > ul {
   display: block;
 }
-/* 탑바 끝 */
+
+
+/* top-bar 끝 */
 /* 커스텀 끝 */
