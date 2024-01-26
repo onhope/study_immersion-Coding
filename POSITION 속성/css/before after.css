@@ -1,0 +1,12 @@
+li::after {
+  content: " 님";
+}
+
+li::before {
+  content: "이쁜 ";
+}
+
+/* ::after와 ::before는 기본적으로 인라인 요소 */
+ul > li::after, ul > li::before {
+  display: block;
+}
