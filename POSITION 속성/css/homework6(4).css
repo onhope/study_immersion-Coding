@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+/* %는 부모의 높이나 너비가 명확히 나와있어야 적용 가능 */
+.box-1 > div {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  transition:width .5s 0s, height .5s 0s;
+}
+
+.box-1 > div:nth-child(1) {
+  top: 0;
+  left: 0;
+  background-color: red;
+  transition: width 1s 0s, height 1s 0s;
+}
+
+body:hover > .box-1 > div:nth-child(1) {
+  transition:width 1s 0s, height 1s 0s;
+}
+
+.box-1 > div:nth-child(2) {
+  top: 0;
+  right: 0;
+  background-color: green;
+  /* .4s 있다가 효과 발생, 두번째 값은 duration */
+  transition: width 1s .4s, height 1s .4s;
+}
+
+body:hover > .box-1 > div:nth-child(2) {
+  transition:width 1s .4s, height 1s .4s;
+}
+
+.box-1 > div:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  background-color: pink;
+  transition: width 1s .8s, height 1s .8s;
+}
+
+body:hover > .box-1 > div:nth-child(3) {
+  transition:width 1s .8s, height 1s .8s;
+}
+
+.box-1 > div:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  background-color: yellow;
+  transition: width 1s 1.2s, height 1s 1.2s;
+}
+
+body:hover > .box-1 > div:nth-child(4) {
+  transition:width 1s 1.2s, height 1s 1.2s;
+}
+
+div:nth-child(1),
+div:nth-child(4) {
+  width: 0;
+}
+
+div:nth-child(2),
+div:nth-child(3) {
+  height: 0;
+}
+
+body:hover > .box-1 > div {
+  width: 50%;
+  height: 50%;
+}
