@@ -1,0 +1,145 @@
+/* 폰트 시작 */
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
+}
+
+html {
+  font-family: 'LotteMartDream', sans-serif;
+}
+/* 폰트 끝 */
+
+/* 노말라이즈 시작 */
+body, ul, li {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+/* 노말라이즈 끝 */
+
+/* 라이브러리 시작 */
+.con {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.block {
+  display:block;
+}
+
+.bg-red {
+  background-color:red;
+}
+
+.bg-blue {
+  background-color:blue;
+}
+/* 라이브러리 끝 */
+
+/* 커스텀 시작 */
+:root {
+  --site-width:1200px;
+}
+
+.con-min-width {
+  min-width:var(--site-width);
+  padding:0 10px;
+}
+
+.con {
+  width:var(--site-width);
+}
+
+/* 사이드바 시작 */
+.side-bar {
+  position: fixed;
+  top: 0;
+  left: -270px;
+  width: 300px;
+  height: 100%;
+  background-color: #afafaf;
+  font-size: 1.5rem;
+  transition: left .3s;
+}
+
+.side-bar:hover {
+  left: 0;
+  transition: left .3s;
+}
+
+.side-bar__status-ico-box > span {
+  display: block;
+  padding: 10px;
+  text-align: right;
+}
+
+.side-bar__status-ico-box > span:last-child {
+  display: none;
+}
+
+.side-bar:hover > .side-bar__status-ico-box > span:last-child {
+  display: block;
+}
+
+.side-bar:hover > .side-bar__status-ico-box > span:first-child {
+  display: none;
+}
+
+.side-bar__menu-box-1 ul > li > a:not(:only-child)::after {
+  content: "[+]";
+}
+
+.side-bar__menu-box-1 ul > li:hover > a:not(:only-child)::after {
+  content: "[-]";
+}
+
+.side-bar__menu-box-1 ul > li {
+  position: relative;
+}
+
+.side-bar__menu-box-1 ul > li > a {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.side-bar__menu-box-1 ul > li:hover > a {
+  background-color: black;
+  color: white;
+}
+
+.side-bar__menu-box-1 > ul ul {
+  display: none;
+  padding-left: 20px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+.side-bar__menu-box-1 > ul > li:hover > ul {
+  display: block;
+}
+
+/* 사이드바 끝 */
+
+/* 커스텀 끝 */
