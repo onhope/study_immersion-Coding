@@ -94,67 +94,39 @@ a {
 
 /* 사이드바 시작 */
 :root {
+  --site-bar__phase-1-width : 60px;
   --site-bar__status-ico__transition-duration : .4s;
   --site-bar__background-color : #13181E;
   --site-bar__color : #fff;
 }
 
 .side-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: var(--site-bar__background-color);
-  width: 400px;
+  width: var(--side-bar__phase-1-width);
   height: 100vh;
   color: var(--site-bar__color);
-  font-size: 2rem;
-  text-align: center;
-  padding-top: 30px;
-  box-sizing: border-box;
+  transition: width 0.3s;
+  overflow: hidden;
 }
 
-.text {
-  font-size: 3rem;
-  color: var(--site-bar__color);
-  font-style: italic;
-  text-shadow: 3px 3px 0 rgba(255, 255, 255, 0.2);
-  transition: text-shadow .12s;
-}
-
-.text:hover {
-  text-shadow: 0 0 2px rgba(255, 255, 255, 1);
-}
-
-.side-bar__menu-box-1 > ul > li > a {
-  display: block;
-}
-
-.side-bar__menu-box-1 > ul > li > a > span {
-  vertical-align: middle;
-}
-
-.side-bar__menu-box-1 > ul > li > a > span:first-child {
-  display: inline-flex;
-  width: 3rem;
-  height: 3rem;
-  border: 2px solid white;
-  border-radius: 50%;
-  position: relative;
-}
-
-.side-bar__menu-box-1 > ul > li > a > span:first-child > i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.side-bar__menu-box-1 > ul > li > a > span:last-child {
-  font-weight: bold;
+.side-bar:hover {
+  width: 300px;
 }
 
 /* 햄버거 아이콘 시작  */
+:root {
+  --site-bar__status-ico__transition-duration : .2s;
+}
+
 .side-bar__status-ico {
-  width: 50px;
-  height: 50px;
-  position: relative;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 30px;
+  left: 20px;
 }
 
 .side-bar__status-ico > div {
@@ -163,7 +135,7 @@ a {
   left: 0;
   width: 100%;
   height: 20%;
-  background-color: black;
+  background-color: var(--site-bar__color);
   transition: all var(--site-bar__status-ico__transition-duration);
 }
 
@@ -178,7 +150,7 @@ a {
   height calc(var(--site-bar__status-ico__transition-duration) / 2) 0s ;
 }
 
-body:hover > .side-bar__status-ico > div:nth-child(1) {
+.side-bar:hover > .side-bar__status-ico > div:nth-child(1) {
   left: 40%;
   right: 40%;
   height: 100%;
@@ -194,7 +166,7 @@ body:hover > .side-bar__status-ico > div:nth-child(1) {
   transform-origin: bottom left;  /* 요소 변환의 원점 */
 }
 
-body:hover > .side-bar__status-ico > div:nth-child(2) {
+.side-bar:hover > .side-bar__status-ico > div:nth-child(2) {
   transform: rotate(45deg);
   width: 70.5%;
 }
@@ -208,12 +180,59 @@ body:hover > .side-bar__status-ico > div:nth-child(2) {
   transform-origin: bottom right; 
 }
 
-body:hover > .side-bar__status-ico > div:nth-child(3) {
+.side-bar:hover > .side-bar__status-ico > div:nth-child(3) {
   transform: rotate(-45deg);
   top: 40%;
   width: 70.5%;
 }
 
 /* 햄버거 아이콘 끝 */
+
+/* 사이드바- 메뉴 시작 */
+
+.side-bar__menu-box-1 {
+  margin-top: 80px;
+}
+
+.side-bar__menu-box-1 > ul > li:last-child {
+  margin-top: calc(100vh - 420px);
+}
+
+.side-bar__menu-box-1 > ul > li > a {
+  display: block;
+  white-space: nowrap;
+  padding: 10px 12px;
+}
+
+.side-bar__menu-box-1 > ul > li > a > * {
+  vertical-align: middle;
+}
+
+.side-bar__menu-box-1 > ul > li > a > span:first-child {
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 7px;
+}
+
+.side-bar__menu-box-1 > ul > li > a > span:first-child > i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.side-bar__menu-box-1 > ul > li > a > span:last-child {
+  font-weight: bold;  
+}
+
+.side-bar__menu-box-1 > ul > li:hover > a > span:last-child {
+  text-shadow: 3px 3px 0 rgba(255, 255, 255, 0.2);
+}
+/* 사이드 바 - 메뉴 끝 */
+
 /* 사이드 바 끝 */
 /* 커스텀 끝 */
