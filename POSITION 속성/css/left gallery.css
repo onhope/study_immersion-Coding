@@ -95,7 +95,6 @@ a {
 /* 사이드바 시작 */
 :root {
   --site-bar__phase-1-width : 60px;
-  --site-bar__status-ico__transition-duration : .4s;
   --site-bar__background-color : #13181E;
   --site-bar__color : #fff;
 }
@@ -106,7 +105,7 @@ a {
   left: 0;
   background-color: var(--site-bar__background-color);
   width: var(--side-bar__phase-1-width);
-  height: 100vh;
+  height: 100%;
   color: var(--site-bar__color);
   transition: width 0.3s;
   overflow: hidden;
@@ -114,6 +113,7 @@ a {
 
 .side-bar:hover {
   width: 300px;
+  overflow: visible;
 }
 
 /* 햄버거 아이콘 시작  */
@@ -194,18 +194,22 @@ a {
   margin-top: 80px;
 }
 
+.side-bar__menu-box-1 > ul > li {
+  position: relative;
+}
+
 .side-bar__menu-box-1 > ul > li:last-child {
   margin-top: calc(100vh - 420px);
 }
 
-.side-bar__menu-box-1 > ul > li > a {
+.side-bar__menu-box-1 ul > li > a {
   position: relative;
   display: block;
   white-space: nowrap;
   padding: 10px 12px;
 }
 
-.side-bar__menu-box-1 > ul > li > a::after {
+.side-bar__menu-box-1 ul > li > a::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -216,44 +220,52 @@ a {
   transition: width 0.3s;
 }
 
-.side-bar__menu-box-1 > ul > li:hover > a::after {
+.side-bar__menu-box-1 ul > li:hover > a::after {
   width: 100%;
 }
 
-.side-bar__menu-box-1 > ul > li > a > * {
+.side-bar__menu-box-1 ul > li > a > * {
   vertical-align: middle;
 }
 
-.side-bar__menu-box-1 > ul > li > a > span:first-child {
-  display: inline-flex;
+.side-bar__menu-box-1 ul > li > a > span:first-child {
+  display: inline-block;
   width: 2rem;
   height: 2rem;
   border: 2px solid white;
   border-radius: 50%;
   position: relative;
   margin-right: 7px;
+  transition: transform 0.2s;
 }
 
-.side-bar__menu-box-1 > ul > li:hover > a > span:first-child {
-  transform: translateX(-5px);
+.side-bar__menu-box-1 ul > li:hover > a > span:first-child {
+  transform: translateX(5px);
 }
 
-.side-bar__menu-box-1 > ul > li > a > span:first-child > i {
+.side-bar__menu-box-1 ul > li > a > span:first-child > i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.side-bar__menu-box-1 > ul > li > a > span:last-child {
+.side-bar__menu-box-1 ul > li > a > span:last-child {
   color: var(--site-bar__color);
   font-weight: bold;  
   font-style: italic;
   text-shadow: 3px 3px 0 rgba(255, 255, 255, 0.2);
-  transition: text-shadow .12s, opacity .3s .3s, transform .3s .3s ;
+  display: inline-block;
+}
+
+.side-bar__menu-box-1 ul > li:hover > a > span:last-child {
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
+}
+
+.side-bar__menu-box-1 > ul > li > a > span:last-child {
+  transition: text-shadow .12s, opacity .3s .3s, transform .3s .3s;
   opacity: 0;
   transform: translateY(100%);
-  display: inline-block;
 }
 
 .side-bar__menu-box-1 > ul > li:nth-child(2) > a > span:last-child {
@@ -272,13 +284,22 @@ a {
   transition: text-shadow .12s, opacity .3s .6s, transform .3s .6s;
 }
 
-.side-bar__menu-box-1 > ul > li:hover > a > span:last-child {
-  text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
-}
-
 .side-bar:hover .side-bar__menu-box-1 > ul > li > a > span:last-child {
   opacity: 1;
   transform: translateY(0);
+}
+
+.side-bar__menu-box-1 > ul ul {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  background-color: var(--site-bar__background-color);
+}
+
+.side-bar__menu-box-1 > ul > li:hover > ul {
+  display:block;
 }
 /* 사이드 바 - 메뉴 끝 */
 
