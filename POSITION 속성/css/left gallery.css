@@ -95,6 +95,59 @@ a {
 /* 사이드바 시작 */
 :root {
   --site-bar__status-ico__transition-duration : .4s;
+  --site-bar__background-color : #13181E;
+  --site-bar__color : #fff;
+}
+
+.side-bar {
+  background-color: var(--site-bar__background-color);
+  width: 400px;
+  height: 100vh;
+  color: var(--site-bar__color);
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.text {
+  font-size: 3rem;
+  color: var(--site-bar__color);
+  font-style: italic;
+  text-shadow: 3px 3px 0 rgba(255, 255, 255, 0.2);
+  transition: text-shadow .12s;
+}
+
+.text:hover {
+  text-shadow: 0 0 2px rgba(255, 255, 255, 1);
+}
+
+.side-bar__menu-box-1 > ul > li > a {
+  display: block;
+}
+
+.side-bar__menu-box-1 > ul > li > a > span {
+  vertical-align: middle;
+}
+
+.side-bar__menu-box-1 > ul > li > a > span:first-child {
+  display: inline-flex;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative;
+}
+
+.side-bar__menu-box-1 > ul > li > a > span:first-child > i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.side-bar__menu-box-1 > ul > li > a > span:last-child {
+  font-weight: bold;
 }
 
 /* 햄버거 아이콘 시작  */
