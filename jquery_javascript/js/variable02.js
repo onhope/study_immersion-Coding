@@ -7,8 +7,10 @@ let a = 10;
 let b = 5;
 
 // 수정가능지역 시작
+var c = a;
 a = b;
-b = a;
+b = c;
+
 // 수정가능지역 끝
 
 console.log("a : " + a);
