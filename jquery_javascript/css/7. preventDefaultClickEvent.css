@@ -1,0 +1,30 @@
+body {
+  font-size: 4rem;
+}
+
+
+section, div, article, nav {
+  border: 10px solid black;
+  margin: 30px;
+  padding: 30px;
+}
+
+section.active, div.active, article.active, nav.active {
+  border-color: red;
+}
+
+section {
+  background-color: #8f8f8f;
+}
+
+div {
+  background-color: #afafaf;
+}
+
+article {
+  background-color: #cfcfcf;
+}
+
+nav {
+  background-color: #efefef;
+}
