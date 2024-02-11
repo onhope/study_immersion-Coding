@@ -1,0 +1,44 @@
+.body-content {
+  background-color: white;
+  min-height: 100vh;
+}
+
+.cursor {
+  position: fixed;
+  top: -300px;
+  left: -300px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  mix-blend-mode: difference;
+  pointer-events: none; /* 요소가 포인터 이벤트의 대상이 될 수 있는지의 여부를 지정 */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  transition: width .1s, height .1s;
+}
+
+.cursor-shadow {
+  position: fixed;
+  top: -300px;
+  left: -300px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  mix-blend-mode: difference;
+  pointer-events: none; /* 요소가 포인터 이벤트의 대상이 될 수 있는지의 여부를 지정 */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width .1s, height .1s, top .1s, left .1s;
+  z-index: 99;
+}
+
+.need-to-cursor-big .cursor-shadow {
+  width: 100px;
+  height: 100px;
+}
+
+.cursor-big {
+  color: red;
+  cursor: pointer;
+}
