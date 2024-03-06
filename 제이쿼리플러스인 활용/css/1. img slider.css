@@ -17,7 +17,7 @@ body {
   justify-content: center;
 }
 
-.my-slider-box-1 .my-slider-box-1__btn-left, 
+.my-slider-box-1 .my-slider-box-1__btn-left,
 .my-slider-box-1 .my-slider-box-1__btn-right {
   border: 1px solid black;
   width: 100px;
@@ -27,18 +27,13 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  outline: 0;  
+  outline: 0;
   cursor: pointer;
 }
 
-.my-slider-box-1 .my-slider-box-1__btn-left.swiper-button-disabled, 
+.my-slider-box-1 .my-slider-box-1__btn-left.swiper-button-disabled,
 .my-slider-box-1 .my-slider-box-1__btn-right.swiper-button-disabled {
   opacity: 0.3;
-}
-
-.my-slider-box-1 .swiper-button-next::after, 
-.my-slider-box-1 .swiper-button-prev::after  {
-  font-size: 1.5rem;
 }
 
 .my-slider-box-2 {
